@@ -1,0 +1,41 @@
+em {
+  background-color: #FFEB3B;
+  /*font-weight: bold;*/
+}
+
+.v-expansion-panel-text__wrapper {
+  padding: 0 !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+* {
+  text-transform: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+
+.v-pagination__navigation {
+  box-shadow: none !important;
+}
+
+.v-pagination__item {
+  box-shadow: none !important;
+}
+
+.v-card--variant-outlined {
+  border: thin solid lightgray !important;
+}
+
+.loading {
+  pointer-events: none;
+  background-color: white;
+  opacity: 0.5;
+}
+
+a {
+  color: rgba(33, 150, 243);
+}

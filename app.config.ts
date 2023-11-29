@@ -2,7 +2,7 @@ export default defineAppConfig({
   color: {
     main: "primary",
   },
-  top_image_url: "/home.jpg",
+  top_image_url: "/home.webp",
   menus: [
     {
       title: "第一高等学校旧蔵資料（公開元サイト）",

@@ -25,7 +25,6 @@ jobs:
         with:
           node-version: latest
       - name: Send email notification
-        if: success()
         uses: peter-evans/sendgrid-action@v1
         with:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}

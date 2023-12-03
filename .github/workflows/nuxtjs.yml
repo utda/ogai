@@ -24,6 +24,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
+      - name: Send email notification
+        if: success()
+        uses: peter-evans/sendgrid-action@v1
+        with:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1

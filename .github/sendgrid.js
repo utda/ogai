@@ -1,17 +1,16 @@
 #! /usr/bin/env node
 
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+const apiKey = process.env.SENDGRID_API_KEY;
+sgMail.setApiKey(apiKey);
+
+const to = process.env.SENDGRID_TO.split(',');
 
 const msg = {
-    to: [
-        'nakamura.misa@mail.u-tokyo.ac.jp',
-        "nakamura@hi.u-tokyo.ac.jp"
-    ],
+    to,
     from: 'na.kamura.1263@gmail.com',
-    subject: 'デプロイが完了しました',
-    text: 'デプロイが完了しました',
-    // html: '<p>Hello HTML world!</p>',
+    subject: '[utda/ogai] デプロイが完了しました',
+    text: '[utda/ogai] デプロイが完了しました',
 };
 
 sgMail

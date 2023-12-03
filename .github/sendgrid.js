@@ -5,12 +5,12 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const msg = {
     to: [
-        'na.kamura.1263@gmail.com',
+        'nakamura.misa@mail.u-tokyo.ac.jp',
         "nakamura@hi.u-tokyo.ac.jp"
     ],
     from: 'na.kamura.1263@gmail.com',
-    subject: 'Hello world',
-    text: 'Hello plain world!',
+    subject: 'デプロイが完了しました',
+    text: 'デプロイが完了しました',
     // html: '<p>Hello HTML world!</p>',
 };
 

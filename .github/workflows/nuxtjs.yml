@@ -49,3 +49,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+      - name: Send email notification
+        if: success()
+        uses: sendgrid/sendgrid-action@master
+        with:
+          api_key: ${{ secrets.SENDGRID_API_KEY }}
+          to: na.kamura.1263@gmail.com
+          from: noreply@example.com
+          subject: Build Success
+          body: The build was successful!

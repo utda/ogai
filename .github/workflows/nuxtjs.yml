@@ -20,26 +20,44 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: latest
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
+
       - name: Install dependencies
         run: npm i --force
+      
+      - name: Get Commit Info
+        id: commit
+        run: echo "::set-output name=commit_hash::$(git rev-parse HEAD)"
+
+      - name: Get Branch Name
+        id: branch
+        run: echo "::set-output name=branch_name::$(git rev-parse --abbrev-ref HEAD)"
+
       - name: Static HTML export with Nuxt
         run: npm run generate
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist
+
       - name: Send email notification
         uses: peter-evans/sendgrid-action@v1
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
           SENDGRID_TO: ${{ secrets.SENDGRID_TO }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_BRANCH: ${{ steps.branch.outputs.branch_name }}
+          GITHUB_SHA: ${{ steps.commit.outputs.commit_hash }}
+          GITHUB_TIMESTAMP: ${{ github.event.head_commit.timestamp }}
 
   deploy:
     permissions:

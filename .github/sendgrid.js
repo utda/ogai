@@ -13,16 +13,20 @@ text = `こんにちは、
 
 デプロイが正常に完了しました。以下は詳細情報です：
 
-- リポジトリ名: [${process.env.GITHUB_REPOSITORY}](${repositoryLink})
+- リポジトリ名: ${process.env.GITHUB_REPOSITORY}
 - ブランチ名: ${process.env.GITHUB_BRANCH}
-- コミットハッシュ: [${process.env.GITHUB_SHA}](${commitLink})
 - デプロイ日時: ${process.env.GITHUB_TIMESTAMP}
+- コミットハッシュ: ${process.env.GITHUB_SHA}
+
+${commitLink}
 
 新しい変更が本番環境に反映されました。不具合や問題がある場合は、速やかに対処いたします。
 
 ご質問や疑問点があれば、お気軽にお知らせください。
 
-ありがとうございました。`
+ありがとうございました。
+
+${repositoryLink}`
 
 const msg = {
     to,

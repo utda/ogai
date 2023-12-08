@@ -1,10 +1,12 @@
 <script setup lang="ts">
 const items = [
+  /*
   {
     name: "text-vorwort",
     en: "Vorwort : Was wir wollen (Von West nach Ost)",
     ja: "序文 : 我らが欲するもの(『東漸新誌』)",
   },
+  */
   {
     name: "text-theater",
     en: "Über die Theaterfrage",

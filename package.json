@@ -16,12 +16,12 @@
     "cross-env": "^7.0.3",
     "nuxt": "3.8.2",
     "sass": "^1.69.5",
-    "vue-tsc": "^1.8.22"
+    "vue-tsc": "^1.8.25"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.0",
     "CETEIcean": "^1.8.0",
     "splitpanes": "^3.1.5",
-    "vuetify": "^3.4.4"
+    "vuetify": "^3.4.6"
   }
 }

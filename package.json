@@ -7,7 +7,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "generate": "nuxt generate --dotenv .env.production",
-    "generate:stg": "nuxt generate --dotenv .env.stage"
+    "generate:stg": "nuxt generate --dotenv .env.stage",
+    "generate:dev": "nuxt generate --dotenv .env.dev"
   },
   "devDependencies": {
     "@mdi/js": "^7.3.67",

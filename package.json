@@ -3,6 +3,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --dotenv .env.local",
+    "dev:dev": "nuxt dev --dotenv .env.dev",
     "dev:prod": "nuxt dev --dotenv .env.production",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",

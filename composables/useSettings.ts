@@ -10,7 +10,10 @@ export const useSettings = () => {
 
   const panes = useState("panes", () => [] as Pane[]);
 
+  const color = useState("color", () => "");
+
   return {
+    color,
     theme,
     url,
     xmlString,

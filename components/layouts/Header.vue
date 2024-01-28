@@ -20,7 +20,7 @@ const publicRuntimeConfig = runtimeConfig.public;
 const appConfig = useAppConfig();
 const colorMain = appConfig.color.main;
 
-const { theme } = useSettings();
+const { theme, color } = useSettings();
 
 const app_name = publicRuntimeConfig.appURL;
 
@@ -40,7 +40,12 @@ const isMobile = computed(() => {
 </script>
 
 <template>
-  <v-app-bar :color="colorMain" flat :absolute="true" density="compact">
+  <v-app-bar
+    :color="color || colorMain"
+    flat
+    :absolute="true"
+    density="compact"
+  >
     <v-toolbar-title>
       {{ $t(publicRuntimeConfig.siteName) }}
     </v-toolbar-title>

@@ -14,7 +14,7 @@ const encodingDesc = props.node;
 <template>
   <v-card variant="outlined" class="mt-5">
     <v-card-text>
-      <TeiNodes :nodes="encodingDesc?.childNodes" />
+      <TeiNodes :nodes="encodingDesc?.childNodes ?? null" />
     </v-card-text>
   </v-card>
 </template>

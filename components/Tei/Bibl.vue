@@ -26,7 +26,7 @@ if (source) {
       <v-menu offset-y>
         <template v-slot:activator="{ props }">
           <span v-bind="props" class="clickable">
-            <TeiNodes :nodes="node?.childNodes" />
+            <TeiNodes :nodes="node?.childNodes ?? null" />
           </span>
         </template>
         <v-card width="500">
@@ -37,7 +37,7 @@ if (source) {
       </v-menu>
     </template>
     <template v-else>
-      <TeiNodes :nodes="node?.childNodes" />
+      <TeiNodes :nodes="node?.childNodes ?? null" />
     </template>
   </i>
 </template>

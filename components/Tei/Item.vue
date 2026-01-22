@@ -10,6 +10,6 @@ withDefaults(defineProps<PropType>(), {
 
 <template>
   <v-list-item>
-    <TeiNodes :nodes="node?.childNodes" />
+    <TeiNodes :nodes="node?.childNodes ?? null" />
   </v-list-item>
 </template>

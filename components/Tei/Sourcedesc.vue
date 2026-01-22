@@ -13,6 +13,6 @@ const sourceDesc = props.node;
 
 <template>
   <div>
-    <TeiNodes :nodes="sourceDesc?.childNodes" />
+    <TeiNodes :nodes="sourceDesc?.childNodes ?? null" />
   </div>
 </template>

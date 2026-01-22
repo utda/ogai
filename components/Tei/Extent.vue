@@ -10,6 +10,6 @@ withDefaults(defineProps<PropType>(), {
 
 <template>
   <span>
-    <TeiNodes :nodes="node?.childNodes" />
+    <TeiNodes :nodes="node?.childNodes ?? null" />
   </span>
 </template>

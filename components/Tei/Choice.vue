@@ -68,6 +68,6 @@ if (corresp) {
     </v-menu>
   </template>
   <template v-else>
-    <TeiNodes :tei-nodes="node?.childNodes" />
+    <TeiNodes :nodes="node?.childNodes ?? null" />
   </template>
 </template>

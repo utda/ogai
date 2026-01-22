@@ -108,13 +108,10 @@ export default {
     "location": "場所",
     "sent": "送信",
     "received": "受信",
-    "ja": "日本語",
     "de": "ドイツ語",
     "method": "方法",
     "element": "要素",
     "wit": "文献",
-    "type": "タイプ",
-    "value": "値",
     "lem": "基底テキスト",
     "rdg": "Reading",
     "text": "テキスト",
@@ -133,5 +130,10 @@ export default {
     "history": "歴史",
     "provenance": "来歴",
     "origin": "出自",
-    "notation": "表記"
+    "notation": "表記",
+    "Von West nach Ost": "Von West nach Ost",
+    "第一高等学校旧蔵資料（公開元サイト）": "第一高等学校旧蔵資料（公開元サイト）",
+    "書誌情報": "書誌情報",
+    "本文": "本文",
+    "画像": "画像"
 }

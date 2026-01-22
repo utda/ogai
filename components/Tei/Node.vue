@@ -31,7 +31,8 @@ const isComponentExist = computed(() => {
 });
 
 const style = computed(() => {
-  const style = props.node?.getAttribute("style");
+  if (props.node?.nodeType !== Node.ELEMENT_NODE) return "";
+  const style = (props.node as Element).getAttribute("style");
   return style || "";
 });
 </script>

@@ -14,10 +14,10 @@ const url = props.node
 <template>
   <template v-if="url">
     <a :href="url">
-      <TeiNodes :nodes="node?.childNodes" />
+      <TeiNodes :nodes="node?.childNodes ?? null" />
     </a>
   </template>
   <template v-else>
-    <TeiNodes :nodes="node?.childNodes" />
+    <TeiNodes :nodes="node?.childNodes ?? null" />
   </template>
 </template>

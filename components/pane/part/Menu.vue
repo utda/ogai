@@ -8,7 +8,7 @@ if (biblStruct) {
   biblStruct.remove();
 }
 
-const nodes = teiHeader?.childNodes[0].childNodes;
+const nodes = teiHeader?.childNodes[0].childNodes ?? null;
 </script>
 <template>
   <div class="pa-4">

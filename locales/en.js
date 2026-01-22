@@ -98,5 +98,10 @@ export default {
     "history": "History",
     "provenance": "Provenance",
     "origin": "Origin",
-    "notation": "表記"
+    "notation": "Notation",
+    "Von West nach Ost": "Von West nach Ost",
+    "第一高等学校旧蔵資料（公開元サイト）": "First Higher School Collection (Original Site)",
+    "書誌情報": "Bibliographic Information",
+    "本文": "Text",
+    "画像": "Image"
 }

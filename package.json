@@ -25,5 +25,8 @@
     "CETEIcean": "^1.8.0",
     "splitpanes": "^3.1.5",
     "vuetify": "^3.4.6"
+  },
+  "overrides": {
+    "axios": ">=1.15.2"
   }
 }

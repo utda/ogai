@@ -9,7 +9,7 @@ const { xmlString, xmlDoc, panes, url } = useSettings();
 const publicRuntimeConfig = useRuntimeConfig().public;
 
 const manifest =
-  "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/d99de8a4-5abf-92ef-8efb-6770cce89e22/manifest";
+  "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/d99de8a4-5abf-92ef-8efb-6770cce89e22/manifest";
 const canvas =
   "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/d99de8a4-5abf-92ef-8efb-6770cce89e22/canvas/p3";
 
